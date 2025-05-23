@@ -1,0 +1,14 @@
+---
+description: Specific guidelines for TypeScript usage, including strict typing and interface usage.
+globs: *.ts,*.tsx
+alwaysApply: false
+---
+- Use TypeScript for all new code, with strict type checking enabled.
+- Create specific types for cloud resources (AWS, Azure, GCP) and their relationships.
+- Leverage TypeScript's discriminated unions for handling different resource types.
+- For API responses, define proper interface types that match the expected data structures.
+- Use type guards when narrowing types, especially when dealing with cloud provider-specific features.
+- Prefer interfaces for object types that will be extended, and type aliases for unions, primitives, and tuples.
+- For component props, use named interface types (e.g., `interface ButtonProps {}`).
+- Make use of TypeScript utility types (Pick, Omit, Partial, etc.) when appropriate.
+- Use `zod` for runtime type validation, especially for user inputs and API responses.
