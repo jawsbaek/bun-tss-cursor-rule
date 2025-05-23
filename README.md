@@ -1,0 +1,1 @@
+# bun-tss-cursor-rule
